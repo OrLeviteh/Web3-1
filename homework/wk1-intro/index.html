@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Site</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="" />
+		<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+        
+        <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    </head>
+    
+    <body>
+	    <nav>
+	    	<ul class="nav">
+	    		<li><a href="#section4">SEE YA LATER</a></li>
+	             <li><a href="#section3">WHERE I'M FROM</a></li>
+	             <li><a href="#section2">THINGS I LIKE</a></li>
+	             <li><a href="#section1">HELLO</a></li>
+	         </ul>
+	    </nav>
+	    <div id="content-wrapper">
+			<div class="section black" id="section1">
+	            <h1>Hi I'm Nicole.</h1>
+	            <ul class="nav">
+	            	<a href="#section2"><img src="images/arrow.png" width="260px" alt ="arrow"/></a>
+	            </ul>	            
+	        </div>
+	        
+	        <div class="section white" id="section2">
+	            <img src="images/puppies.jpg" alt ="puppies" width="960px"/>
+	            		<p>
+	                		PUPPIES
+	           			</p>
+	        </div>
+	        
+	        <div class="section black" id="section3">
+	            <img src="images/nyc.jpg" alt="nyc" width="960px"/>
+	        </div>
+	        
+	        
+	        <div class="section black" id="section4">
+	           	<p>BYE.</p>
+	        </div>
+        </div>
+        
+        
+     <!-- The JavaScript -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>		
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('ul.nav a').bind('click',function(event){
+                    var $anchor = $(this);
+                    
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1500,'easeInOutExpo');
+                    /*
+                    if you don't want to use the easing effects:
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1000);
+                    */
+                    event.preventDefault();
+                    $("#content-wrapper").animate({opacity:1.0,top:"0px",left:"0px"},800);
+
+                });
+            });
+        </script>
+    
+    </body>
+ </html>

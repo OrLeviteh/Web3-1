@@ -1,0 +1,229 @@
+@font-face {
+font-family: Proxima Nova;
+src: url(ProximaNova-Light.otf);
+}
+
+body{
+	width: 12000px;
+	background: url('../images/swirl.png') repeat;
+	position: absolute;
+
+}
+
+.section-wrapper{
+	margin-bottom: 0 auto;
+	width:960px;
+	padding: 20px 0px 20px 150px;
+	font-family: 'Proxima Nova', 'Oxygen', sans-serif;
+}
+
+
+.sections{
+	width:1450px;
+	min-height:100%;
+	float: left;
+	margin:0px;
+	bottom:0px;
+	margin-bottom: 50px;
+	
+}
+
+.section-desc{
+	color: #858585;
+	font-size: 16px;
+	line-height: 19px;
+	float:left;
+	width:800px;
+	padding-left: 50px;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
+}
+
+/*********** header ********/
+
+header{
+height:60px;
+
+}
+
+h1{
+	font-family: 'Archivo Narrow', sans-serif;
+	color: #FFAD3F;
+	font-size: 60px;
+	float: left;
+	margin-top: 40px;
+}
+
+h2{
+	font-family: 'Proxima Nova', 'Oxygen', sans-serif;
+	color: #FFAD3F;
+	padding-top: 79px;
+	float:left;
+	margin-left: 23px;
+	
+}
+
+/*********** arrows ********/
+
+.arrow-right{
+	position: relative;
+	float:right;
+	margin-top: 300px;
+	width:30px;
+	padding-left: 20px;
+}
+
+.arrow-left{
+	padding-right: 20px;
+	position: relative;
+	float:left;
+	width:30px;
+	margin-top: 300px;
+}
+
+
+
+/*********** lists ********/
+
+ol li{
+margin: 10px 0px;}
+
+.instructions li{
+display: block;
+width:400px;
+}
+
+/*********** main section ********/
+
+
+.main{
+	float:left;
+	margin-top: 5px;
+	color: #858585;
+	font-size: 16px;
+	line-height: 19px;
+	margin-bottom: 50px;
+}
+
+#main img{
+	float:right;
+	margin-top: -30px;
+	padding-bottom: 15px;
+}
+
+#images{
+margin-bottom: 20px;}
+
+#images li{width:233px;
+height:233px;}
+
+li.steps{width:233px; height:233px; border:1px solid #FFCC99; margin:2px; }
+
+li#intro{ background: url('../images/intro.png'); width: 233px; height:233px; float:left; margin:2px; border:1px solid white; }
+
+li#step1 { background-image: url('../images/step1.png'); }
+li#step2 { background-image: url('../images/step2.png'); }
+li#step3 { background-image: url('../images/step3.png'); }
+li#step4 { background-image: url('../images/step4.png'); }
+li#step5 { background-image: url('../images/step5.png'); }
+li#step6 { background-image: url('../images/step6.png'); }
+li#step7 { background-image: url('../images/step7.png'); }
+li#step8 { background-image: url('../images/step8.png'); }
+li#step9 { background-image: url('../images/step9.png'); }
+li#step10 { background-image: url('../images/step10.png'); }
+li#step11 { background-image: url('../images/step11.png'); }
+
+li#step1:hover{  background-image: url('../images/step1hover.png');}
+li#step2:hover{  background-image: url('../images/step2hover.png');}
+li#step3:hover{  background-image: url('../images/step3hover.png');}
+li#step4:hover{  background-image: url('../images/step4hover.png');}
+li#step5:hover{  background-image: url('../images/step5hover.png');}
+li#step6:hover{  background-image: url('../images/step6hover.png');}
+li#step7:hover{  background-image: url('../images/step7hover.png');}
+li#step8:hover{ background-image: url('../images/step8hover.png');}
+li#step9:hover{ background-image: url('../images/step9hover.png');}
+li#step10:hover{ background-image: url('../images/step10hover.png');}
+li#step11:hover{ background-image: url('../images/step11hover.png');}
+
+
+#images li{
+float:left;}
+
+
+
+span{
+	color: #FFAD3F;
+}
+
+/*********** secondary pages ********/
+
+.content-wrapper{
+	float:left;
+	margin-top: 15px;
+	color: #858585;
+	font-size: 16px;
+	line-height: 19px;
+	margin-bottom: 25px;
+	padding-bottom: 60px;
+}
+
+.clickable{
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+/*********** columns ********/
+
+.column1{
+	margin-top: 50px;
+	width:300px;
+	float:left;
+	height:300px;
+}
+
+.column2{
+	margin-top: 50px;
+	width:550px;
+	float:left;
+	height:300px;
+}
+
+.column3 ul li{
+	width:210px;
+	height:210px;
+	display: inline;
+	float: left;
+	margin:1px;
+}
+
+.column3{
+	display: block;
+}
+
+/*********** hover imgs ********/
+
+.desc{
+	padding-top: 20px;
+	margin-bottom: 25px;
+	float:left;
+	color: #858585;
+}
+
+li#pose { background-image: url('../images/pose.png'); }
+li#benefits { background-image: url('../images/benefits.png'); }
+li#beg { background-image: url('../images/beginner.png'); }
+li#adv { background-image: url('../images/advances.png'); }
+
+li#pose:hover { cursor: pointer; background-image: url('../images/poseback.png'); }
+li#benefits:hover { cursor: pointer; background-image: url('../images/benefitsback.png'); }
+li#beg:hover { cursor: pointer; background-image: url('../images/beginnerback.png'); }
+li#adv:hover { cursor: pointer; background-image: url('../images/advback.png'); }
+
+
+
+.content-wrapper{
+width:860px;
+}
+
